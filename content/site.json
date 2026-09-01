@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "Uzm. Psk. Deniz Ornek",
-    "title": "Uzman Klinik Psikolog",
-    "email": "ornek@psychofolio.com",
-    "address": "Istanbul, Turkiye",
+    "name": "Ad Soyad",
+    "title": "Unvan",
+    "email": "iletisim@siteniz.com",
+    "address": "Sehir, Turkiye",
     "copyright": "Tum haklari saklidir."
   },
   "home": {
@@ -48,32 +48,88 @@
     "title": "Hakkimda",
     "intro": "Bilissel davranisci terapi ve noropsikoloji alaninda calisan bir klinik psikolog olarak, kanita dayali yontemlerle danisanlarima destek sunuyorum.",
     "credentials": [
-      { "year": "\u2014", "title": "Lisans Egitimi", "detail": "Psikoloji alaninda lisans derecesi" },
-      { "year": "\u2014", "title": "Yuksek Lisans", "detail": "Klinik noropsikoloji alaninda uzmanlik" },
-      { "year": "\u2014", "title": "BDT Egitimi", "detail": "Bilissel davranisci terapi ileri duzey sertifika programi" }
+      {
+        "year": "—",
+        "title": "Lisans Egitimi",
+        "detail": "Psikoloji alaninda lisans derecesi"
+      },
+      {
+        "year": "—",
+        "title": "Yuksek Lisans",
+        "detail": "Klinik noropsikoloji alaninda uzmanlik"
+      },
+      {
+        "year": "—",
+        "title": "BDT Egitimi",
+        "detail": "Bilissel davranisci terapi ileri duzey sertifika programi"
+      }
     ]
   },
   "approach": {
     "title": "Terapi Yaklasimim",
     "intro": "Terapide amacim, dusunce kaliplarina farkinda olmanizi, islevsel olmayan kaliplari yeniden yapilandirmanizi ve davranissal degisimi destekleyecek beceriler kazanmanizi saglamaktir.",
     "principles": [
-      { "title": "Kanita Dayali Yaklasim", "desc": "Bilimsel arastirmalarla etkinligi kanitlanmis terapi protokollerini uyguluyorum. Her mudahale olcumleme ve degerlendirmeye aciktir." },
-      { "title": "Yapilandirilmis Surecler", "desc": "Net hedefler, olculebilir ilerleme ve zamani tanimlanmis terapi planlariyla calisiyorum." },
-      { "title": "Psikoegitime Oncelik", "desc": "Danisanlarimi kendi bilissel sureclerini anlama ve yonetme konusunda bilgilendiriyorum." },
-      { "title": "Isbirlikci Calisma", "desc": "Terapi surecini danisanla birlikte planliyorum. Ev odevleri ve seanslar arasi uygulamalar sureecin ayrilmaz parcasidir." }
+      {
+        "title": "Kanita Dayali Yaklasim",
+        "desc": "Bilimsel arastirmalarla etkinligi kanitlanmis terapi protokollerini uyguluyorum. Her mudahale olcumleme ve degerlendirmeye aciktir."
+      },
+      {
+        "title": "Yapilandirilmis Surecler",
+        "desc": "Net hedefler, olculebilir ilerleme ve zamani tanimlanmis terapi planlariyla calisiyorum."
+      },
+      {
+        "title": "Psikoegitime Oncelik",
+        "desc": "Danisanlarimi kendi bilissel sureclerini anlama ve yonetme konusunda bilgilendiriyorum."
+      },
+      {
+        "title": "Isbirlikci Calisma",
+        "desc": "Terapi surecini danisanla birlikte planliyorum. Ev odevleri ve seanslar arasi uygulamalar sureecin ayrilmaz parcasidir."
+      }
     ]
   },
   "articles": [
-    { "title": "BDT Nedir? Bilissel Davranisci Terapiye Giris", "category": "BDT", "readTime": "7 dk", "date": "Ornek tarih" },
-    { "title": "Noropsikolojik Degerlendirme: Ne Zaman, Neden?", "category": "Noropsikoloji", "readTime": "8 dk", "date": "Ornek tarih" },
-    { "title": "Sinav Kaygisi ve Bilissel Stratejiler", "category": "Performans", "readTime": "6 dk", "date": "Ornek tarih" },
-    { "title": "Otomatik Dusunceler ve Bilissel Carpitmalar", "category": "BDT", "readTime": "9 dk", "date": "Ornek tarih" }
+    {
+      "title": "BDT Nedir? Bilissel Davranisci Terapiye Giris",
+      "category": "BDT",
+      "readTime": "7 dk",
+      "date": ""
+    },
+    {
+      "title": "Noropsikolojik Degerlendirme: Ne Zaman, Neden?",
+      "category": "Noropsikoloji",
+      "readTime": "8 dk",
+      "date": ""
+    },
+    {
+      "title": "Sinav Kaygisi ve Bilissel Stratejiler",
+      "category": "Performans",
+      "readTime": "6 dk",
+      "date": ""
+    },
+    {
+      "title": "Otomatik Dusunceler ve Bilissel Carpitmalar",
+      "category": "BDT",
+      "readTime": "9 dk",
+      "date": ""
+    }
   ],
   "faq": [
-    { "q": "BDT kac seans surer?", "a": "BDT genellikle 8-20 seans arasinda suresi olan yapilandirilmis bir terapidir. Sure, calisiilan konuya ve bireysel ihtiyaclara gore degisir." },
-    { "q": "Noropsikolojik degerlendirme nedir?", "a": "Noropsikolojik degerlendirme, bilissel islevleri (dikkat, bellek, yurutucuu islevler) standart testlerle olcen kapsamli bir degerlendirme surecidir." },
-    { "q": "Cevrimici BDT etkili mi?", "a": "Arastirmalar, cevrimici BDT'nin bircok durum icin yuzyuze terapiyle benzer etkinlikte oldugunu gostermektedir." },
-    { "q": "Seans ucreti ne kadar?", "a": "Seans bilgisi icin iletisime gecin." }
+    {
+      "q": "BDT kac seans surer?",
+      "a": "BDT genellikle 8-20 seans arasinda suresi olan yapilandirilmis bir terapidir. Sure, calisiilan konuya ve bireysel ihtiyaclara gore degisir."
+    },
+    {
+      "q": "Noropsikolojik degerlendirme nedir?",
+      "a": "Noropsikolojik degerlendirme, bilissel islevleri (dikkat, bellek, yurutucuu islevler) standart testlerle olcen kapsamli bir degerlendirme surecidir."
+    },
+    {
+      "q": "Cevrimici BDT etkili mi?",
+      "a": "Arastirmalar, cevrimici BDT'nin bircok durum icin yuzyuze terapiyle benzer etkinlikte oldugunu gostermektedir."
+    },
+    {
+      "q": "Seans ucreti ne kadar?",
+      "a": "Seans bilgisi icin iletisime gecin."
+    }
   ],
   "contact": {
     "title": "Iletisim",
