@@ -1,0 +1,86 @@
+{
+  "site": {
+    "name": "Uzm. Psk. Deniz Ornek",
+    "title": "Uzman Klinik Psikolog",
+    "email": "ornek@psychofolio.com",
+    "address": "Istanbul, Turkiye",
+    "copyright": "Tum haklari saklidir."
+  },
+  "home": {
+    "badge": "SYNAPSE",
+    "headline": "Zihin ve",
+    "headlineAccent": "davranis",
+    "headlineSuffix": "birlikte degisir.",
+    "description": "Bilissel davranisci terapi ve noropsikolojik degerlendirme alaninda, kanita dayali yontemlerle calisiyorum.",
+    "cta": "Iletisime Gecin",
+    "cardTitle": "Kanita Dayali",
+    "cardSubtitle": "Bilissel Davranisci Terapi",
+    "quote": "Dusuncelerimiz duygularimizi, duygularimiz davranislarimizi sekillendrir.",
+    "quoteAuthor": "Aaron T. Beck"
+  },
+  "services": [
+    {
+      "title": "Bilissel Davranisci Terapi (BDT)",
+      "desc": "Depresyon, kaygi bozukluklari, OKB ve fobiler icin yapilandirilmis, kanita dayali kisa sureli terapi protokolu.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    },
+    {
+      "title": "Noropsikolojik Degerlendirme",
+      "desc": "Dikkat, bellek, yurutucu islevler ve bilissel profil belirlemeye yonelik kapsamli test bataryasi uygulamasi.",
+      "duration": "90 dk",
+      "method": "Yuzyuze"
+    },
+    {
+      "title": "Performans Psikolojisi",
+      "desc": "Akademik ve mesleki performans optimizasyonu, sinav kaygisi ve hedef odakli bilissel stratejiler.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    },
+    {
+      "title": "Bireysel Psikoterapi",
+      "desc": "Kaygi, depresyon ve uyum bozukluklari icin bilissel davranisci cercevede bireysel terapi sureci.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    }
+  ],
+  "about": {
+    "title": "Hakkimda",
+    "intro": "Bilissel davranisci terapi ve noropsikoloji alaninda calisan bir klinik psikolog olarak, kanita dayali yontemlerle danisanlarima destek sunuyorum.",
+    "credentials": [
+      { "year": "\u2014", "title": "Lisans Egitimi", "detail": "Psikoloji alaninda lisans derecesi" },
+      { "year": "\u2014", "title": "Yuksek Lisans", "detail": "Klinik noropsikoloji alaninda uzmanlik" },
+      { "year": "\u2014", "title": "BDT Egitimi", "detail": "Bilissel davranisci terapi ileri duzey sertifika programi" }
+    ]
+  },
+  "approach": {
+    "title": "Terapi Yaklasimim",
+    "intro": "Terapide amacim, dusunce kaliplarina farkinda olmanizi, islevsel olmayan kaliplari yeniden yapilandirmanizi ve davranissal degisimi destekleyecek beceriler kazanmanizi saglamaktir.",
+    "principles": [
+      { "title": "Kanita Dayali Yaklasim", "desc": "Bilimsel arastirmalarla etkinligi kanitlanmis terapi protokollerini uyguluyorum. Her mudahale olcumleme ve degerlendirmeye aciktir." },
+      { "title": "Yapilandirilmis Surecler", "desc": "Net hedefler, olculebilir ilerleme ve zamani tanimlanmis terapi planlariyla calisiyorum." },
+      { "title": "Psikoegitime Oncelik", "desc": "Danisanlarimi kendi bilissel sureclerini anlama ve yonetme konusunda bilgilendiriyorum." },
+      { "title": "Isbirlikci Calisma", "desc": "Terapi surecini danisanla birlikte planliyorum. Ev odevleri ve seanslar arasi uygulamalar sureecin ayrilmaz parcasidir." }
+    ]
+  },
+  "articles": [
+    { "title": "BDT Nedir? Bilissel Davranisci Terapiye Giris", "category": "BDT", "readTime": "7 dk", "date": "Ornek tarih" },
+    { "title": "Noropsikolojik Degerlendirme: Ne Zaman, Neden?", "category": "Noropsikoloji", "readTime": "8 dk", "date": "Ornek tarih" },
+    { "title": "Sinav Kaygisi ve Bilissel Stratejiler", "category": "Performans", "readTime": "6 dk", "date": "Ornek tarih" },
+    { "title": "Otomatik Dusunceler ve Bilissel Carpitmalar", "category": "BDT", "readTime": "9 dk", "date": "Ornek tarih" }
+  ],
+  "faq": [
+    { "q": "BDT kac seans surer?", "a": "BDT genellikle 8-20 seans arasinda suresi olan yapilandirilmis bir terapidir. Sure, calisiilan konuya ve bireysel ihtiyaclara gore degisir." },
+    { "q": "Noropsikolojik degerlendirme nedir?", "a": "Noropsikolojik degerlendirme, bilissel islevleri (dikkat, bellek, yurutucuu islevler) standart testlerle olcen kapsamli bir degerlendirme surecidir." },
+    { "q": "Cevrimici BDT etkili mi?", "a": "Arastirmalar, cevrimici BDT'nin bircok durum icin yuzyuze terapiyle benzer etkinlikte oldugunu gostermektedir." },
+    { "q": "Seans ucreti ne kadar?", "a": "Seans bilgisi icin iletisime gecin." }
+  ],
+  "contact": {
+    "title": "Iletisim",
+    "intro": "Kanita dayali destek almak icin iletisime gecebilirsiniz.",
+    "formName": "Adiniz",
+    "formEmail": "E-posta",
+    "formMessage": "Mesajiniz",
+    "formSubmit": "Gonder"
+  }
+}
