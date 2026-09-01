@@ -7,7 +7,7 @@ import type { SiteContent } from "@/lib/content";
 const VIOLET = "#7b6cf0";
 const PINK = "#ee7ab5";
 
-const topics = ["kaygi / duygudurum", "dikkat & bellek", "performans", "diger"];
+const topics = ["kaygı / duygudurum", "dikkat & bellek", "performans", "diğer"];
 
 export function ContactClient({ content: c }: { content: SiteContent }) {
   const scopeRef = useSynapseReveal();
@@ -18,15 +18,15 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
   const [sent, setSent] = useState(false);
 
   return (
-    <SynapseShell scopeRef={scopeRef} kicker="iletisim" title="Ilk adimi" accent="birlikte atalim." siteName={c.site.name}>
+    <SynapseShell scopeRef={scopeRef} kicker="iletişim" title="İlk adımı" accent="birlikte atalım." siteName={c.site.name}>
       <section className="relative z-[1] pb-28 pt-2">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-[7fr_5fr]">
             {/* 3-step form */}
             <div data-reveal className="overflow-hidden rounded-3xl border border-[#16181f]/8 bg-white shadow-[0_14px_40px_rgba(22,24,31,0.06)]">
               <div className="flex items-center justify-between border-b border-[#16181f]/6 px-6 py-3 text-[11px] font-medium text-[#6a7080]">
-                <span>gorusme talebi</span>
-                <span>{sent ? "alindi" : `adim ${step + 1}/3`}</span>
+                <span>görüşme talebi</span>
+                <span>{sent ? "alındı" : `adım ${step + 1}/3`}</span>
               </div>
 
               {!sent && (
@@ -48,10 +48,10 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
               {sent ? (
                 <div className="flex min-h-[320px] flex-col items-center justify-center gap-4 p-8 text-center">
                   <Waveform className="h-6 w-40" />
-                  <p className="text-xl font-semibold tracking-tight">{name ? `Tesekkurler ${name.split(" ")[0]} -` : ""} mesajiniz bize ulasti.</p>
+                  <p className="text-xl font-semibold tracking-tight">{name ? `Teşekkürler ${name.split(" ")[0]} -` : ""} mesajınız bize ulaştı.</p>
                   <p className="max-w-sm text-[13px] font-light leading-[1.9] text-[#5a6070]">
-                    Bir is gunu icinde uygun saat secenekleriyle donus yapilir.
-                    (Bu bir sablon onizlemesidir - mesaj gonderilmedi.)
+                    Bir iş günü içinde uygun saat seçenekleriyle dönüş yapılır.
+                    (Bu bir şablon önizlemesidir - mesaj gönderilmedi.)
                   </p>
                 </div>
               ) : (
@@ -65,7 +65,7 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                 >
                   {step === 0 && (
                     <div className="space-y-5">
-                      <p className="text-[11px] font-semibold text-[#7b6cf0]">1 - Size nasil ulasalim?</p>
+                      <p className="text-[11px] font-semibold text-[#7b6cf0]">1 - Size nasıl ulaşalım?</p>
                       {[
                         { id: "sc-ad", label: c.contact.formName, type: "text", val: name, set: setName },
                         { id: "sc-eposta", label: c.contact.formEmail, type: "email", val: email, set: setEmail },
@@ -86,7 +86,7 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                   )}
                   {step === 1 && (
                     <div>
-                      <p className="text-[11px] font-semibold text-[#7b6cf0]">2 - Sizi en cok ne yoruyor?</p>
+                      <p className="text-[11px] font-semibold text-[#7b6cf0]">2 - Sizi en çok ne yoruyor?</p>
                       <div className="mt-4 grid grid-cols-2 gap-3">
                         {topics.map((t) => (
                           <button
@@ -110,9 +110,9 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                       <div className="mb-4 flex flex-wrap gap-2 rounded-2xl bg-[#f8f9fb] p-3 text-[11px] text-[#5a6070]">
                         <span className="rounded-full bg-white px-3 py-1 shadow-sm">{name || "-"}</span>
                         <span className="rounded-full bg-white px-3 py-1 shadow-sm">{email || "-"}</span>
-                        <span className="rounded-full bg-white px-3 py-1 font-medium text-[#7b6cf0] shadow-sm">{topic || "konu secilmedi"}</span>
+                        <span className="rounded-full bg-white px-3 py-1 font-medium text-[#7b6cf0] shadow-sm">{topic || "konu seçilmedi"}</span>
                       </div>
-                      <p className="text-[11px] font-semibold text-[#7b6cf0]">3 - Birkac cumleyle anlatin</p>
+                      <p className="text-[11px] font-semibold text-[#7b6cf0]">3 - Birkaç cümleyle anlatın</p>
                       <textarea
                         rows={5}
                         required
@@ -146,9 +146,9 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
             {/* SLA panel */}
             <div className="space-y-4">
               {[
-                { k: "Ne zaman donus alirsiniz?", v: "1 is gunu icinde", d: "Tum mesajlara ayni gun ya da ertesi gun yanit verilir." },
-                { k: "Ilk gorusme ne zaman?", v: "genellikle ayni hafta", d: "Degerlendirme gorusmeleri cogunlukla 5 gun icinde planlanir." },
-                { k: "Nasil gorusuruz?", v: "cevrim ici ya da yuz yuze", d: `${c.site.address} - testlerin bir kismi yuz yuze uygulanir.` },
+                { k: "Ne zaman dönüş alırsınız?", v: "1 iş günü içinde", d: "Tüm mesajlara aynı gün ya da ertesi gün yanıt verilir." },
+                { k: "İlk görüşme ne zaman?", v: "genellikle aynı hafta", d: "Değerlendirme görüşmeleri çoğunlukla 5 gün içinde planlanır." },
+                { k: "Nasıl görüşürüz?", v: "çevrim içi ya da yüz yüze", d: `${c.site.address} - testlerin bir kısmı yüz yüze uygulanır.` },
               ].map((x) => (
                 <div key={x.k} data-reveal className="rounded-3xl border border-[#16181f]/6 bg-white p-6 shadow-[0_10px_28px_rgba(22,24,31,0.05)]">
                   <p className="text-[11px] font-semibold text-[#6a7080]">{x.k}</p>
@@ -157,8 +157,8 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                 </div>
               ))}
               <p data-reveal className="px-2 text-[11px] font-light leading-[1.8] text-[#6a7080]">
-                Acil bir kriz durumundaysaniz lutfen 112&apos;yi arayin; bu form acil
-                mudahale icin uygun degildir.
+                Acil bir kriz durumundaysanız lütfen 112&apos;yi arayın; bu form acil
+                müdahale için uygun değildir.
               </p>
             </div>
           </div>

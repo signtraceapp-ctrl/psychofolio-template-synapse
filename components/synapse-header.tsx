@@ -8,10 +8,10 @@ const VIOLET = "#7b6cf0";
 const PINK = "#ee7ab5";
 
 const navLinks = [
-  { label: "Hakkinda", path: "/hakkimda" },
+  { label: "Hakkında", path: "/hakkimda" },
   { label: "Hizmetler", path: "/hizmetler" },
-  { label: "Yaklasim", path: "/yaklasim" },
-  { label: "Yazilar", path: "/yazilar" },
+  { label: "Yaklaşım", path: "/yaklasim" },
+  { label: "Yazılar", path: "/yazilar" },
   { label: "SSS", path: "/sss" },
 ] as const;
 
@@ -58,7 +58,7 @@ export function SynapseHeader({ siteName = "SYNAPSE" }: SynapseHeaderProps) {
               {siteName}
             </span>
           </Link>
-          <nav className="hidden items-center lg:flex" aria-label="Site menusu">
+          <nav className="hidden items-center lg:flex" aria-label="Site menüsü">
             {navLinks.map((l) => (
               <Link
                 key={l.path}
@@ -83,7 +83,7 @@ export function SynapseHeader({ siteName = "SYNAPSE" }: SynapseHeaderProps) {
           <button
             className="flex h-9 w-9 items-center justify-center rounded-full text-[#16181f] lg:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? "Menuyu kapat" : "Menuyu ac"}
+            aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
             aria-expanded={menuOpen}
           >
             <span className="relative block h-3 w-4" aria-hidden="true">

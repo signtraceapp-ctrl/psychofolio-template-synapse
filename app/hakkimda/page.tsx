@@ -2,7 +2,7 @@ import { getContent } from "@/lib/content";
 import type { Metadata } from "next";
 import { AboutClient } from "./about-client";
 
-export const metadata: Metadata = { title: "Hakkinda" };
+export const metadata: Metadata = { title: "Hakkında" };
 
 export default function AboutPage() {
   const c = getContent();

@@ -9,25 +9,25 @@ const PINK = "#ee7ab5";
 
 const matrix = {
   cols: [
-    { code: "P-01", name: "Bilissel Davranisci Terapi", color: VIOLET },
-    { code: "P-02", name: "Noropsikolojik Degerlendirme", color: PINK },
+    { code: "P-01", name: "Bilişsel Davranışçı Terapi", color: VIOLET },
+    { code: "P-02", name: "Nöropsikolojik Değerlendirme", color: PINK },
     { code: "P-03", name: "Performans & Odak", color: "#57b9e9" },
   ],
   rows: [
-    { k: "hedef", v: ["Kaygi, depresyon, OKB", "Dikkat, bellek, yurutucu islev haritasi", "Bilissel yuk altinda dayaniklilik"] },
-    { k: "format", v: ["Bire bir seans", "Test bataryasi + gorusme", "Bire bir kocluk"] },
-    { k: "sure", v: ["50 dk - haftalik", "2 oturum - toplam ~4 saat", "45 dk - iki haftada bir"] },
-    { k: "olcum", v: ["4 haftada bir standardize olcek", "Standardize normlarla rapor", "Oturum basi performans takibi"] },
-    { k: "cikti", v: ["Surec + nuks onleme plani", "Ayrintili rapor - 10 is gunu", "Kisisel odak protokolu"] },
-    { k: "kime uygun", v: ["Belirti odakli calismak isteyenler", "Somut bilissel yakinmasi olanlar", "Sporcular, yogun bilissel is yuku"] },
+    { k: "hedef", v: ["Kaygı, depresyon, OKB", "Dikkat, bellek, yürütücü işlev haritası", "Bilişsel yük altında dayanıklılık"] },
+    { k: "format", v: ["Bire bir seans", "Test bataryası + görüşme", "Bire bir koçluk"] },
+    { k: "süre", v: ["50 dk · haftalık", "2 oturum · toplam ~4 saat", "45 dk · iki haftada bir"] },
+    { k: "ölçüm", v: ["4 haftada bir standardize ölçek", "Standardize normlarla rapor", "Oturum başı performans takibi"] },
+    { k: "çıktı", v: ["Süreç + nüks önleme planı", "Ayrıntılı rapor · 10 iş günü", "Kişisel odak protokolü"] },
+    { k: "kime uygun", v: ["Belirti odaklı çalışmak isteyenler", "Somut bilişsel yakınması olanlar", "Sporcular, yoğun bilişsel iş yükü"] },
   ],
 };
 
 const triage = [
-  { label: "Kaygi, mutsuzluk ya da takintilar", rec: 0, note: "Duygu odakli yakinmalarda ilk adim genellikle P-01'dir: yapilandirilmis, olcumle izlenen terapi." },
-  { label: "Dikkat, bellek ya da odaklanma sorunlari", rec: 1, note: "Somut bilissel yakinmalarda once haritayi cikarmak gerekir: P-02 kapsamli bir degerlendirme sunar." },
-  { label: "Performansimi bir ust seviyeye tasimak istiyorum", rec: 2, note: "Klinik bir yakinma olmadan gelisim hedefi icin P-03 odak koclugu uygundur." },
-  { label: "Emin degilim / birden fazlasi", rec: 0, note: "Sorun degil, ilk degerlendirme gorusmesinde birlikte netlestiririz. Baslangic icin P-01 iyi bir kapidir." },
+  { label: "Kaygı, mutsuzluk ya da takıntılar", rec: 0, note: "Duygu odaklı yakınmalarda ilk adım genellikle P-01'dir: yapılandırılmış, ölçümle izlenen terapi." },
+  { label: "Dikkat, bellek ya da odaklanma sorunları", rec: 1, note: "Somut bilişsel yakınmalarda önce haritayı çıkarmak gerekir: P-02 kapsamlı bir değerlendirme sunar." },
+  { label: "Performansımı bir üst seviyeye taşımak istiyorum", rec: 2, note: "Klinik bir yakınma olmadan gelişim hedefi için P-03 odak koçluğu uygundur." },
+  { label: "Emin değilim / birden fazlası", rec: 0, note: "Sorun değil, ilk değerlendirme görüşmesinde birlikte netleştiririz. Başlangıç için P-01 iyi bir kapıdır." },
 ];
 
 export function ServicesClient({ content: c }: { content: SiteContent }) {
@@ -49,7 +49,7 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
       <section className="relative z-[1] pb-10 pt-2">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div data-reveal className="mx-auto max-w-3xl rounded-3xl border border-[#16181f]/8 bg-white p-7 shadow-[0_14px_40px_rgba(22,24,31,0.06)] md:p-8">
-            <p className="text-[15px] font-semibold tracking-tight">Sizi buraya getiren en cok hangisi?</p>
+            <p className="text-[15px] font-semibold tracking-tight">Sizi buraya getiren en çok hangisi?</p>
             <div className="mt-4 grid gap-2.5 sm:grid-cols-2">
               {triage.map((t, i) => (
                 <button
@@ -75,9 +75,9 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
                 </span>
                 <p className="text-[13px] font-light leading-[1.8] text-[#3c4250]">
                   <span className="font-semibold text-[#7b6cf0]">
-                    Onerimiz: {cols[triage[picked].rec].name}.
+                    Önerimiz: {cols[triage[picked].rec].name}.
                   </span>{" "}
-                  {triage[picked].note} Asagidaki tabloda onerilen sutun isaretli.
+                  {triage[picked].note} Aşağıdaki tabloda önerilen sütun işaretli.
                 </p>
               </div>
             )}
@@ -107,7 +107,7 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
                       <p className="mt-1 text-[15px] font-semibold tracking-tight">{col.name}</p>
                       {rec === i && (
                         <span className="mt-1.5 inline-block rounded-full bg-[#7b6cf0] px-2.5 py-0.5 text-[9px] font-semibold text-white">
-                          size onerilen
+                          size önerilen
                         </span>
                       )}
                     </th>
@@ -134,8 +134,8 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
             </table>
           </div>
           <p data-reveal className="mx-auto mt-6 max-w-2xl text-center text-xs font-light leading-relaxed text-[#6a7080]">
-            Hangi protokolun uygun olduguna ilk degerlendirme gorusmesinde
-            birlikte karar verilir; protokoller gerektiginde birlestirilir.
+            Hangi protokolün uygun olduğuna ilk değerlendirme görüşmesinde
+            birlikte karar verilir; protokoller gerektiğinde birleştirilir.
           </p>
         </div>
       </section>

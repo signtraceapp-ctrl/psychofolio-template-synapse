@@ -14,10 +14,10 @@ const VIOLET = "#7b6cf0";
 const PINK = "#ee7ab5";
 
 const plasticSteps = [
-  { k: "1", t: "Fark et", d: "Sizi yoran dusunce ve davranis donglerini birlikte gorunur kilariz. Beyin, fark edilmeyen aliskanligi degistiremez." },
-  { k: "2", t: "Yeni deneyim", d: "Seans icinde ve disinda, eski dongunun yerine gececek yeni, kucuk deneyimler tasarlariz. Her yeni deneyim zayif bir baglanti kurar." },
-  { k: "3", t: "Tekrar", d: "Yeni baglanti ancak tekrarla guclenir, noroplastisitenin altin kurali budur. Ev uygulamalari bu yuzden vardir." },
-  { k: "4", t: "Kalici yol", d: "Zamanla yeni yol, eskisinden daha kolay yurunur hale gelir. Terapinin bittigi yer, beynin yeni varsayilaninin basladigi yerdir." },
+  { k: "1", t: "Fark et", d: "Sizi yoran düşünce ve davranış döngülerini birlikte görünür kılarız. Beyin, fark edilmeyen alışkanlığı değiştiremez." },
+  { k: "2", t: "Yeni deneyim", d: "Seans içinde ve dışında, eski döngünün yerine geçecek yeni, küçük deneyimler tasarlarız. Her yeni deneyim zayıf bir bağlantı kurar." },
+  { k: "3", t: "Tekrar", d: "Yeni bağlantı ancak tekrarla güçlenir, nöroplastisitenin altın kuralı budur. Ev uygulamaları bu yüzden vardır." },
+  { k: "4", t: "Kalıcı yol", d: "Zamanla yeni yol, eskisinden daha kolay yürünür hale gelir. Terapinin bittiği yer, beynin yeni varsayılanının başladığı yerdir." },
 ];
 
 export function ApproachClient({ content: c }: { content: SiteContent }) {
@@ -49,7 +49,7 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
   }, []);
 
   return (
-    <SynapseShell scopeRef={scopeRef} kicker="yaklasim" title="Beyin degisir," accent="biz eslik ederiz." siteName={c.site.name}>
+    <SynapseShell scopeRef={scopeRef} kicker="yaklaşım" title="Beyin değişir," accent="biz eşlik ederiz." siteName={c.site.name}>
       <section className="relative z-[1] pb-14 pt-2">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p data-reveal className="mx-auto max-w-xl text-center text-[15px] font-light leading-[2] text-[#5a6070]">
@@ -84,7 +84,7 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
                   <path d="M150 288 C 110 310, 90 320, 60 326 M150 288 C 190 310, 210 320, 240 326 M150 288 C 180 296, 200 300, 230 298" stroke={VIOLET} strokeOpacity=".45" strokeWidth="1.6" strokeLinecap="round" />
                 </svg>
                 <p className="mt-3 text-center text-[11px] font-light text-[#6a7080]">
-                  adim {active + 1}/4 - baglanti gucleniyor
+                  adım {active + 1}/4 · bağlantı güçleniyor
                 </p>
               </div>
             </div>
@@ -114,8 +114,8 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
 
           <div data-reveal className="mx-auto mt-8 max-w-2xl rounded-3xl bg-white p-8 text-center shadow-[0_14px_40px_rgba(22,24,31,0.06)]">
             <p className="text-[15px] font-light leading-[2] text-[#4a5060]">
-              Bu dongunun her adimini <span className="font-medium text-[#7b6cf0]">duzenli olcumlerle</span> birlikte
-              izleriz. Cunku degisimi gormek, degisimi hizlandirir.
+              Bu döngünün her adımını <span className="font-medium text-[#7b6cf0]">düzenli ölçümlerle</span> birlikte
+              izleriz. Çünkü değişimi görmek, değişimi hızlandırır.
             </p>
           </div>
         </div>

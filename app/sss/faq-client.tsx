@@ -18,7 +18,7 @@ export function FaqClient({ content: c }: { content: SiteContent }) {
     : allFaqs;
 
   return (
-    <SynapseShell scopeRef={scopeRef} kicker="merak edilenler" title="Aklinizdaki" accent="sorular." siteName={c.site.name}>
+    <SynapseShell scopeRef={scopeRef} kicker="merak edilenler" title="Aklınızdaki" accent="sorular." siteName={c.site.name}>
       <section className="relative z-[1] pb-28 pt-2">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div data-reveal className="mx-auto mb-8 max-w-4xl">
@@ -26,12 +26,12 @@ export function FaqClient({ content: c }: { content: SiteContent }) {
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Sorunuzu yazin..."
+                placeholder="Sorunuzu yazın..."
                 className="w-full rounded-2xl border border-[#16181f]/8 bg-white py-4 pl-5 pr-5 text-sm shadow-[0_10px_30px_rgba(22,24,31,0.05)] outline-none transition-[border-color,box-shadow] duration-300 placeholder:text-[#9aa0ae] focus:border-[#7b6cf0]/50 focus:ring-2 focus:ring-[#7b6cf0]/15"
               />
               {q && (
                 <span className="absolute right-5 top-1/2 -translate-y-1/2 text-[11px] font-light text-[#6a7080]">
-                  {shown.length} sonuc
+                  {shown.length} sonuç
                 </span>
               )}
             </div>
@@ -58,8 +58,8 @@ export function FaqClient({ content: c }: { content: SiteContent }) {
             <div className="space-y-6">
               {shown.length === 0 && (
                 <p className="rounded-2xl bg-white p-6 text-sm font-light text-[#6a7080]">
-                  Bu konuda hazir bir yanit yok - iletisim sayfasindan sorabilirsiniz,
-                  bir is gunu icinde donus yapilir.
+                  Bu konuda hazır bir yanıt yok - iletişim sayfasından sorabilirsiniz,
+                  bir iş günü içinde dönüş yapılır.
                 </p>
               )}
               {shown.map((f, i) => (

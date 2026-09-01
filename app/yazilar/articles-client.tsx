@@ -11,17 +11,17 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
   const scopeRef = useSynapseReveal();
   const articles = c.articles;
   const [featured, ...rest] = articles;
-  const cats = ["Tumu", ...Array.from(new Set(rest.map((n) => n.category)))];
-  const [cat, setCat] = useState("Tumu");
-  const shown = cat === "Tumu" ? rest : rest.filter((n) => n.category === cat);
+  const cats = ["Tümü", ...Array.from(new Set(rest.map((n) => n.category)))];
+  const [cat, setCat] = useState("Tümü");
+  const shown = cat === "Tümü" ? rest : rest.filter((n) => n.category === cat);
 
   return (
-    <SynapseShell scopeRef={scopeRef} kicker="yazilar" title="Beyin" accent="kutuphanesi." siteName={c.site.name}>
+    <SynapseShell scopeRef={scopeRef} kicker="yazılar" title="Beyin" accent="kütüphanesi." siteName={c.site.name}>
       <section className="relative z-[1] pb-6 pt-2">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p data-reveal className="mx-auto max-w-xl text-center text-[14px] font-light leading-[1.9] text-[#5a6070]">
-            Beyniniz hakkinda merak ettikleriniz. Jargonsuz, korkutmadan,
-            arastirmalara dayanarak.
+            Beyniniz hakkında merak ettikleriniz. Jargonsuz, korkutmadan,
+            araştırmalara dayanarak.
           </p>
         </div>
       </section>
@@ -36,7 +36,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
             >
               <div className="flex flex-wrap items-center gap-3">
                 <span className="rounded-full bg-[#ee7ab5]/10 px-3 py-1 text-[11px] font-semibold text-[#d6538e]">{featured.category}</span>
-                <span className="text-[11px] font-light text-[#6a7080]">{featured.readTime} okuma{featured.date ? ` - ${featured.date}` : ""}</span>
+                <span className="text-[11px] font-light text-[#6a7080]">{featured.readTime} okuma{featured.date ? ` · ${featured.date}` : ""}</span>
               </div>
               <h2 className="mt-4 max-w-xl text-2xl font-semibold leading-[1.3] tracking-tight transition-colors duration-500 group-hover:text-[#7b6cf0] sm:text-3xl">
                 {featured.title}
@@ -68,7 +68,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
                 {ct}
               </button>
             ))}
-            <span className="ml-auto text-[11px] font-light text-[#6a7080]">{shown.length} yazi</span>
+            <span className="ml-auto text-[11px] font-light text-[#6a7080]">{shown.length} yazı</span>
           </div>
           <div className="mx-auto grid max-w-3xl gap-5 sm:grid-cols-2">
             {shown.map((n) => (

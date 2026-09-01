@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * SYNAPSE - Ana sayfa: holografik beyin, cananan sinaps baglantilari,
- * scroll ile cizilen sinyal dalgasi ve sayacli kanit blogu.
+ * SYNAPSE - Ana sayfa: holografik beyin, canlanan sinaps bağlantıları,
+ * scroll ile çizilen sinyal dalgası ve sayaçlı kanıt bloğu.
  */
 
 import { useEffect, useRef, useState, useCallback } from "react";
@@ -97,10 +97,10 @@ function VigilanceTask() {
         <div className="mx-auto max-w-3xl">
           <div data-reveal className="text-center">
             <p className="text-[11px] font-semibold tracking-[0.08em] text-[#7b6cf0]">
-              kucuk bir deneyim - tepki suresi gorevi
+              küçük bir deneyim · tepki süresi görevi
             </p>
             <h2 className="mt-4 text-3xl tracking-[-0.025em] md:text-4xl">
-              <span className="font-light">Olcum nasil hissettirir,</span>{" "}
+              <span className="font-light">Ölçüm nasıl hissettirir,</span>{" "}
               <span
                 className="bg-clip-text font-bold text-transparent"
                 style={{ backgroundImage: `linear-gradient(92deg,${PINK},${VIOLET})` }}
@@ -109,9 +109,9 @@ function VigilanceTask() {
               </span>
             </h2>
             <p className="mx-auto mt-3 max-w-md text-[13px] font-light leading-[1.9] text-[#5a6070]">
-              Psikomotor vijilans gorevinden uyarlanmis {TRIALS} denemelik kisa
-              bir uygulama: fiksasyon isaretine odaklanin, daire belirdigi an
-              yanit verin.
+              Psikomotor vijilans görevinden uyarlanmış {TRIALS} denemelik kısa
+              bir uygulama: fiksasyon işaretine odaklanın, daire belirdiği an
+              yanıt verin.
             </p>
           </div>
 
@@ -120,12 +120,12 @@ function VigilanceTask() {
             className="mt-8 overflow-hidden rounded-3xl border border-[#16181f]/8 bg-white shadow-[0_14px_40px_rgba(22,24,31,0.06)]"
           >
             <div className="flex items-center justify-between border-b border-[#16181f]/6 px-6 py-3 text-[11px] font-medium text-[#6a7080]">
-              <span>uygulama alani</span>
+              <span>uygulama alanı</span>
               <span>
                 {state === "report"
-                  ? "tamamlandi"
+                  ? "tamamlandı"
                   : state === "intro"
-                    ? "hazir"
+                    ? "hazır"
                     : `deneme ${trial}/${TRIALS}`}
               </span>
             </div>
@@ -134,15 +134,15 @@ function VigilanceTask() {
               <button
                 onClick={state === "intro" ? begin : respond}
                 className="flex min-h-[240px] w-full flex-col items-center justify-center gap-4 outline-none"
-                aria-label="Uygulama alani"
+                aria-label="Uygulama alanı"
               >
                 {state === "intro" && (
                   <>
                     <span className="rounded-full border border-[#7b6cf0]/40 px-7 py-3 text-sm font-medium text-[#7b6cf0]">
-                      Uygulamayi baslat
+                      Uygulamayı başlat
                     </span>
                     <span className="font-mono text-[10px] text-[#6a7080]">
-                      daire belirdiginde alana tiklayin
+                      daire belirdiğinde alana tıklayın
                     </span>
                   </>
                 )}
@@ -168,7 +168,7 @@ function VigilanceTask() {
                   {[
                     ["ortalama", `${mean} ms`],
                     ["en iyi", `${best} ms`],
-                    ["degiskenlik (ss)", `+/- ${sd} ms`],
+                    ["değişkenlik (ss)", `± ${sd} ms`],
                   ].map(([k, v]) => (
                     <div key={k} className="rounded-2xl bg-[#f6f7fa] p-4">
                       <p className="font-mono text-[9px] uppercase tracking-[0.18em] text-[#6a7080]">{k}</p>
@@ -180,7 +180,7 @@ function VigilanceTask() {
                 <div className="mt-7">
                   <div className="flex justify-between font-mono text-[9px] text-[#6a7080]">
                     <span>150 ms</span>
-                    <span>tipik yetiskin araligi</span>
+                    <span>tipik yetişkin aralığı</span>
                     <span>500 ms</span>
                   </div>
                   <div className="relative mt-1.5 h-3 rounded-full bg-[#16181f]/6">
@@ -199,15 +199,15 @@ function VigilanceTask() {
 
                 {early > 0 && (
                   <p className="mt-4 font-mono text-[10px] text-[#6a7080]">
-                    not: {early} erken yanit kaydedildi (uyarandan once)
+                    not: {early} erken yanıt kaydedildi (uyarandan önce)
                   </p>
                 )}
                 <p className="mt-5 text-[12px] font-light leading-[1.9] text-[#6a7080]">
-                  Bu uygulama bir tani araci degildir; tek oturumluk sonuclar
+                  Bu uygulama bir tanı aracı değildir; tek oturumluk sonuçlar
                   uyku, kafein ve o anki dikkat durumundan etkilenir. Dikkat ve
-                  tepki sureclerinin kapsamli degerlendirmesi icin{" "}
-                  <span className="font-medium text-[#7b6cf0]">P-02 Noropsikolojik Degerlendirme</span>{" "}
-                  protokolune bakin.
+                  tepki süreçlerinin kapsamlı değerlendirmesi için{" "}
+                  <span className="font-medium text-[#7b6cf0]">P-02 Nöropsikolojik Değerlendirme</span>{" "}
+                  protokolüne bakın.
                 </p>
                 <button
                   onClick={begin}
@@ -228,33 +228,33 @@ function VigilanceTask() {
 const journeyPhases = [
   {
     t: "Beyniniz",
-    a: "degisebilir.",
-    d: "Buna noroplastisite denir. Kanitini gormek icin kaydirin, sizi beynin icine goturuyoruz.",
-    tag: "disaridan bakis",
+    a: "değişebilir.",
+    d: "Buna nöroplastisite denir. Kanıtını görmek için kaydırın, sizi beynin içine götürüyoruz.",
+    tag: "dışarıdan bakış",
   },
   {
-    t: "Her dusunce,",
+    t: "Her düşünce,",
     a: "bir yol izler.",
-    d: "Su an bu cumleyi okurken bile milyonlarca baglanti atesleniyor. Beyin, en cok kullanilan yollari guclendirir.",
-    tag: "beynin icindesiniz",
+    d: "Şu an bu cümleyi okurken bile milyonlarca bağlantı ateşleniyor. Beyin, en çok kullanılan yolları güçlendirir.",
+    tag: "beynin içindesiniz",
   },
   {
-    t: "Kaygi, cok yurunmus",
+    t: "Kaygı, çok yürünmüş",
     a: "bir yoldur.",
-    d: "Su kapali donguye bakin: endise tekrar ettikce yol derinlesir ve beyin onu otomatik yurumeye baslar. Suc sizde degil, yol asinmis.",
-    tag: "kaygi dongusu",
+    d: "Şu kapalı döngüye bakın: endişe tekrar ettikçe yol derinleşir ve beyin onu otomatik yürümeye başlar. Suç sizde değil, yol aşınmış.",
+    tag: "kaygı döngüsü",
   },
   {
     t: "Terapi, yeni bir",
-    a: "yol acar.",
-    d: "Her seans, her yeni deneyim mor baglantiyi biraz daha guclendiriyor. Ve bakin, eski dongu kullanilmadikca sessizlesiyor.",
-    tag: "yeni baglanti gucleniyor",
+    a: "yol açar.",
+    d: "Her seans, her yeni deneyim mor bağlantıyı biraz daha güçlendiriyor. Ve bakın, eski döngü kullanılmadıkça sessizleşiyor.",
+    tag: "yeni bağlantı güçleniyor",
   },
   {
-    t: "Beyniniz degisebilir.",
-    a: "Bilim bunun kaniti.",
-    d: "Bilissel davranisci terapi ve noropsikolojik degerlendirmeyle bu degisime birlikte eslik ediyoruz.",
-    tag: "yeniden butun",
+    t: "Beyniniz değişebilir.",
+    a: "Bilim bunun kanıtı.",
+    d: "Bilişsel davranışçı terapi ve nöropsikolojik değerlendirmeyle bu değişime birlikte eşlik ediyoruz.",
+    tag: "yeniden bütün",
   },
 ];
 
@@ -312,8 +312,8 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
   }, []);
 
   const protocols = [
-    { k: "01 / BDT", t: c.services[0]?.title || "Bilissel Davranisci Terapi", d: c.services[0]?.desc || "", w: "86%" },
-    { k: "02 / NORO", t: c.services[1]?.title || "Noropsikolojik Degerlendirme", d: c.services[1]?.desc || "", w: "72%" },
+    { k: "01 / BDT", t: c.services[0]?.title || "Bilişsel Davranışçı Terapi", d: c.services[0]?.desc || "", w: "86%" },
+    { k: "02 / NÖRO", t: c.services[1]?.title || "Nöropsikolojik Değerlendirme", d: c.services[1]?.desc || "", w: "72%" },
     { k: "03 / ODAK", t: c.services[2]?.title || "Performans & Odak", d: c.services[2]?.desc || "", w: "91%" },
   ];
 
@@ -335,7 +335,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
         ref={journeyRef}
         className="relative"
         style={{ height: "420vh" }}
-        aria-label="Beynin icine yolculuk"
+        aria-label="Beynin içine yolculuk"
       >
         <div ref={pinRef} className="relative h-screen w-full overflow-hidden">
           <div className="absolute inset-0">
@@ -362,7 +362,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                   {i === 0 && (
                     <p className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-[#16181f]/8 bg-white/70 px-5 py-2 text-[11px] font-medium tracking-[0.08em] text-[#6a7080] backdrop-blur">
                       <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#7b6cf0]" aria-hidden="true" />
-                      {c.site.name} - {c.home.badge.toLowerCase()}
+                      {c.site.name} · {c.home.badge.toLowerCase()}
                     </p>
                   )}
                   <h1
@@ -396,7 +396,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                         href="#sinyal"
                         className="rounded-full border border-[#16181f]/10 bg-white/80 px-8 py-4 text-sm text-[#16181f] backdrop-blur transition-colors duration-300 hover:border-[#7b6cf0]/50 hover:text-[#7b6cf0]"
                       >
-                        Yontemi incele
+                        Yöntemi incele
                       </a>
                     </div>
                   )}
@@ -417,7 +417,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
               />
             </div>
             <p className="mt-2 text-center text-[10px] font-light text-[#6a7080]">
-              {journeyPhase === 0 ? "kaydir - beynin icine gir" : journeyPhases[journeyPhase].tag}
+              {journeyPhase === 0 ? "kaydır · beynin içine gir" : journeyPhases[journeyPhase].tag}
             </p>
           </div>
         </div>
@@ -428,10 +428,10 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 md:grid-cols-4">
             {[
-              { n: 11, s: "+", l: "yil klinik deneyim" },
-              { n: 3800, s: "+", l: "tamamlanmis seans" },
-              { n: 4, s: " haftada bir", l: "duzenli sonuc olcumu" },
-              { n: 14, s: "", l: "bilimsel yayin & bildiri" },
+              { n: 11, s: "+", l: "yıl klinik deneyim" },
+              { n: 3800, s: "+", l: "tamamlanmış seans" },
+              { n: 4, s: " haftada bir", l: "düzenli sonuç ölçümü" },
+              { n: 14, s: "", l: "bilimsel yayın & bildiri" },
             ].map((x) => (
               <div key={x.l} data-reveal className="rounded-2xl border border-white bg-white/75 p-6 shadow-[0_12px_34px_rgba(22,24,31,0.06)] backdrop-blur">
                 <p className="text-4xl font-bold tracking-tight" style={{ fontFamily: "var(--font-synapse), var(--font-sans), sans-serif" }}>
@@ -454,12 +454,12 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <p data-reveal className="text-[11px] font-semibold tracking-[0.08em] text-[#7b6cf0]">
-              yontem
+              yöntem
             </p>
             <h2 data-reveal className="mx-auto mt-4 max-w-2xl text-3xl tracking-[-0.025em] md:text-5xl">
-              <span className="font-light">Degisimi hissetmekle kalmayin,</span>{" "}
+              <span className="font-light">Değişimi hissetmekle kalmayın,</span>{" "}
               <span className="bg-clip-text text-transparent" style={{ backgroundImage: `linear-gradient(92deg,${PINK},${VIOLET})` }}>
-                <span className="font-bold">gorun.</span>
+                <span className="font-bold">görün.</span>
               </span>
             </h2>
             <div data-reveal className="mt-12 overflow-hidden rounded-3xl border border-[#16181f]/6 bg-white p-8 shadow-[0_14px_40px_rgba(22,24,31,0.06)] md:p-12">
@@ -483,9 +483,9 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
               </svg>
               <div className="mt-8 grid gap-6 text-left md:grid-cols-3">
                 {[
-                  ["Baslangic haritasi", "Standardize olcekler ve klinik gorusmeyle net bir sifir noktasi."],
-                  ["Gorunur ilerleme", "Dort haftada bir olcum; grafikler danisanla birlikte okunur."],
-                  ["Veriyle ayar", "Islemeyen strateji degisir, tahminle degil kayitla."],
+                  ["Başlangıç haritası", "Standardize ölçekler ve klinik görüşmeyle net bir sıfır noktası."],
+                  ["Görünür ilerleme", "Dört haftada bir ölçüm; grafikler danışanla birlikte okunur."],
+                  ["Veriyle ayar", "İşlemeyen strateji değişir, tahminle değil kayıtla."],
                 ].map(([t, d]) => (
                   <div key={t} data-reveal>
                     <h3 className="text-sm font-semibold tracking-tight">{t}</h3>
@@ -505,8 +505,8 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
             <div data-reveal className="text-center">
               <p className="text-[11px] font-semibold tracking-[0.08em] text-[#7b6cf0]">hizmetler</p>
               <h2 className="mt-4 text-3xl tracking-[-0.025em] md:text-4xl">
-                <span className="font-light">Uc hizmet, tek standart:</span>{" "}
-                <span className="bg-clip-text font-bold text-transparent" style={{ backgroundImage: `linear-gradient(92deg,${PINK},${VIOLET})` }}>kanit.</span>
+                <span className="font-light">Üç hizmet, tek standart:</span>{" "}
+                <span className="bg-clip-text font-bold text-transparent" style={{ backgroundImage: `linear-gradient(92deg,${PINK},${VIOLET})` }}>kanıt.</span>
               </h2>
             </div>
             <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -530,7 +530,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                       style={{ width: p.w, background: `linear-gradient(92deg,${PINK},${VIOLET})` }}
                     />
                   </div>
-                  <p className="mt-2 text-[10px] text-[#6a7080]">danisan memnuniyeti - ic olcum</p>
+                  <p className="mt-2 text-[10px] text-[#6a7080]">danışan memnuniyeti · iç ölçüm</p>
                 </div>
               ))}
             </div>
@@ -548,7 +548,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
           >
             <Waveform color="rgba(255,255,255,.5)" className="mx-auto h-6 w-44" />
             <h2 className="mt-6 text-3xl tracking-[-0.025em] md:text-4xl">
-              <span className="font-light">Ilk sinyali</span> <span className="font-bold">bugun gonderin.</span>
+              <span className="font-light">İlk sinyali</span> <span className="font-bold">bugün gönderin.</span>
             </h2>
             <p className="mx-auto mt-4 max-w-md text-sm font-light leading-[1.9] text-white/85">
               {c.contact.intro}
@@ -564,7 +564,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
       </section>
 
       <footer className="border-t border-[#16181f]/8 py-10 text-center">
-        <p className="text-xs text-[#6a7080]">{c.site.name} - beyin degisebilir, biz bu degisimin bilimiyle calisiriz</p>
+        <p className="text-xs text-[#6a7080]">{c.site.name} · beyin değişebilir, biz bu değişimin bilimiyle çalışırız</p>
       </footer>
     </div>
   );

@@ -1,142 +1,152 @@
 {
   "site": {
-    "name": "Ad Soyad",
-    "title": "Unvan",
+    "name": "Synapse",
+    "title": "Beyin ve Davranış Bilimi",
     "email": "iletisim@siteniz.com",
-    "address": "Sehir, Turkiye",
-    "copyright": "Tum haklari saklidir."
+    "address": "Şehir, Türkiye",
+    "copyright": "Tüm hakları saklıdır."
   },
   "home": {
-    "badge": "SYNAPSE",
-    "headline": "Zihin ve",
-    "headlineAccent": "davranis",
-    "headlineSuffix": "birlikte degisir.",
-    "description": "Bilissel davranisci terapi ve noropsikolojik degerlendirme alaninda, kanita dayali yontemlerle calisiyorum.",
-    "cta": "Iletisime Gecin",
-    "cardTitle": "Kanita Dayali",
-    "cardSubtitle": "Bilissel Davranisci Terapi",
-    "quote": "Dusuncelerimiz duygularimizi, duygularimiz davranislarimizi sekillendrir.",
-    "quoteAuthor": "Aaron T. Beck"
+    "badge": "beyin ve davranış bilimi",
+    "headline": "Beyniniz",
+    "headlineAccent": "değişebilir.",
+    "headlineSuffix": "",
+    "description": "Bilişsel davranışçı terapi ve nöropsikolojik değerlendirme alanında, kanıta dayalı yöntemlerle çalışıyorum.",
+    "cta": "İlk değerlendirmeyi planla",
+    "cardTitle": "Kanıta Dayalı",
+    "cardSubtitle": "Bilişsel Davranışçı Terapi",
+    "quote": "Danışanlarıma ilk görüşmede hep aynı şeyi söylerim: beyniniz bozuk değil, bazı bağlantıları sizi yormayı öğrenmiş. İyi haber şu ki, öğrenilen her şey yeniden öğrenilebilir. Benim işim bu yeniden öğrenmeye bilimin araçlarıyla eşlik etmek.",
+    "quoteAuthor": ""
   },
   "services": [
     {
-      "title": "Bilissel Davranisci Terapi (BDT)",
-      "desc": "Depresyon, kaygi bozukluklari, OKB ve fobiler icin yapilandirilmis, kanita dayali kisa sureli terapi protokolu.",
+      "title": "Bilişsel Davranışçı Terapi",
+      "desc": "Kaygı ve depresyonda yapılandırılmış, ölçümle izlenen çalışma.",
       "duration": "50 dk",
-      "method": "Yuzyuze / Cevrimici"
+      "method": "Yüzyüze / Çevrimiçi"
     },
     {
-      "title": "Noropsikolojik Degerlendirme",
-      "desc": "Dikkat, bellek, yurutucu islevler ve bilissel profil belirlemeye yonelik kapsamli test bataryasi uygulamasi.",
+      "title": "Nöropsikolojik Değerlendirme",
+      "desc": "Dikkat, bellek ve yürütücü işlevlerin standardize haritası.",
       "duration": "90 dk",
-      "method": "Yuzyuze"
+      "method": "Yüzyüze"
     },
     {
-      "title": "Performans Psikolojisi",
-      "desc": "Akademik ve mesleki performans optimizasyonu, sinav kaygisi ve hedef odakli bilissel stratejiler.",
+      "title": "Performans & Odak",
+      "desc": "Yoğun bilişsel yük altında toparlanma ve dikkat protokolleri.",
       "duration": "50 dk",
-      "method": "Yuzyuze / Cevrimici"
+      "method": "Yüzyüze / Çevrimiçi"
     },
     {
       "title": "Bireysel Psikoterapi",
-      "desc": "Kaygi, depresyon ve uyum bozukluklari icin bilissel davranisci cercevede bireysel terapi sureci.",
+      "desc": "Kaygı, depresyon ve uyum bozuklukları için bilişsel davranışçı çerçevede bireysel terapi süreci.",
       "duration": "50 dk",
-      "method": "Yuzyuze / Cevrimici"
+      "method": "Yüzyüze / Çevrimiçi"
     }
   ],
   "about": {
-    "title": "Hakkimda",
-    "intro": "Bilissel davranisci terapi ve noropsikoloji alaninda calisan bir klinik psikolog olarak, kanita dayali yontemlerle danisanlarima destek sunuyorum.",
+    "title": "Hakkında",
+    "intro": "Bir beyni özel kılan şey hücreleri değil, aralarındaki bağlantılardır. Bir klinisyeni de öyle: eğitim, deneyim, araştırma ve süpervizyon. Hepsi birbirini besleyen bağlantılar.",
     "credentials": [
       {
-        "year": "—",
-        "title": "Lisans Egitimi",
-        "detail": "Psikoloji alaninda lisans derecesi"
+        "year": "-",
+        "title": "Lisans Eğitimi",
+        "detail": "Psikoloji alanında lisans derecesi"
       },
       {
-        "year": "—",
-        "title": "Yuksek Lisans",
-        "detail": "Klinik noropsikoloji alaninda uzmanlik"
+        "year": "-",
+        "title": "Yüksek Lisans",
+        "detail": "Klinik nöropsikoloji alanında uzmanlık"
       },
       {
-        "year": "—",
-        "title": "BDT Egitimi",
-        "detail": "Bilissel davranisci terapi ileri duzey sertifika programi"
+        "year": "-",
+        "title": "BDT Eğitimi",
+        "detail": "Bilişsel davranışçı terapi ileri düzey sertifika programı"
       }
     ]
   },
   "approach": {
-    "title": "Terapi Yaklasimim",
-    "intro": "Terapide amacim, dusunce kaliplarina farkinda olmanizi, islevsel olmayan kaliplari yeniden yapilandirmanizi ve davranissal degisimi destekleyecek beceriler kazanmanizi saglamaktir.",
+    "title": "Terapi Yaklaşımım",
+    "intro": "Buna bilimde nöroplastisite denir: beyin, tekrar edilen her deneyimle kendini yeniden şekillendirir. Terapi, bu doğal yeteneği bilinçli olarak kullanma sanatıdır. Aşağı indikçe iki nöron arasındaki bağlantının güçlenişini izleyin, terapide olan tam olarak budur.",
     "principles": [
       {
-        "title": "Kanita Dayali Yaklasim",
-        "desc": "Bilimsel arastirmalarla etkinligi kanitlanmis terapi protokollerini uyguluyorum. Her mudahale olcumleme ve degerlendirmeye aciktir."
+        "title": "Kanıta Dayalı Yaklaşım",
+        "desc": "Bilimsel araştırmalarla etkinliği kanıtlanmış terapi protokollerini uyguluyorum. Her müdahale ölçümleme ve değerlendirmeye açıktır."
       },
       {
-        "title": "Yapilandirilmis Surecler",
-        "desc": "Net hedefler, olculebilir ilerleme ve zamani tanimlanmis terapi planlariyla calisiyorum."
+        "title": "Yapılandırılmış Süreçler",
+        "desc": "Net hedefler, ölçülebilir ilerleme ve zamanı tanımlanmış terapi planlarıyla çalışıyorum."
       },
       {
-        "title": "Psikoegitime Oncelik",
-        "desc": "Danisanlarimi kendi bilissel sureclerini anlama ve yonetme konusunda bilgilendiriyorum."
+        "title": "Psikoeğitime Öncelik",
+        "desc": "Danışanlarımı kendi bilişsel süreçlerini anlama ve yönetme konusunda bilgilendiriyorum."
       },
       {
-        "title": "Isbirlikci Calisma",
-        "desc": "Terapi surecini danisanla birlikte planliyorum. Ev odevleri ve seanslar arasi uygulamalar sureecin ayrilmaz parcasidir."
+        "title": "İşbirlikçi Çalışma",
+        "desc": "Terapi sürecini danışanla birlikte planlıyorum. Ev ödevleri ve seanslar arası uygulamalar sürecin ayrılmaz parçasıdır."
       }
     ]
   },
   "articles": [
     {
-      "title": "BDT Nedir? Bilissel Davranisci Terapiye Giris",
-      "category": "BDT",
-      "readTime": "7 dk",
-      "date": ""
-    },
-    {
-      "title": "Noropsikolojik Degerlendirme: Ne Zaman, Neden?",
-      "category": "Noropsikoloji",
-      "readTime": "8 dk",
-      "date": ""
-    },
-    {
-      "title": "Sinav Kaygisi ve Bilissel Stratejiler",
-      "category": "Performans",
+      "title": "Kaygıda maruz bırakma: neden işe yarar, ne zaman yaramaz?",
+      "category": "Kaygı",
       "readTime": "6 dk",
-      "date": ""
+      "date": "Mayıs 2026"
     },
     {
-      "title": "Otomatik Dusunceler ve Bilissel Carpitmalar",
-      "category": "BDT",
-      "readTime": "9 dk",
-      "date": ""
+      "title": "Dikkat dağınıklığı tembellik değildir",
+      "category": "Dikkat",
+      "readTime": "5 dk",
+      "date": "Şubat 2026"
+    },
+    {
+      "title": "Terapide ilerlemeyi nasıl ölçüyoruz?",
+      "category": "Ölçüm",
+      "readTime": "4 dk",
+      "date": "Kasım 2025"
+    },
+    {
+      "title": "Beyin kaç yaşına kadar değişir? (İpucu: sınırı yok)",
+      "category": "Nöroplastisite",
+      "readTime": "7 dk",
+      "date": "Ağustos 2025"
+    },
+    {
+      "title": "Uykusuz beynin amigdalası: duygular neden büyür?",
+      "category": "Uyku",
+      "readTime": "5 dk",
+      "date": "Mayıs 2025"
     }
   ],
   "faq": [
     {
-      "q": "BDT kac seans surer?",
-      "a": "BDT genellikle 8-20 seans arasinda suresi olan yapilandirilmis bir terapidir. Sure, calisiilan konuya ve bireysel ihtiyaclara gore degisir."
+      "q": "'Kanıta dayalı terapi' tam olarak ne demek?",
+      "a": "Kullanılan yöntemlerin, kontrollü araştırmalarla etkinliği gösterilmiş yaklaşımlardan seçilmesi ve sürecin düzenli ölçümlerle izlenmesi demek. Size özel olan, yöntemin kendisi değil - uygulanış biçimi ve hızıdır."
     },
     {
-      "q": "Noropsikolojik degerlendirme nedir?",
-      "a": "Noropsikolojik degerlendirme, bilissel islevleri (dikkat, bellek, yurutucuu islevler) standart testlerle olcen kapsamli bir degerlendirme surecidir."
+      "q": "İlerlemeyi gerçekten ölçebiliyor musunuz?",
+      "a": "Evet - mükemmel olmasa da anlamlı biçimde. Standardize ölçekler, hedef davranış takibi ve seans içi gözlem birlikte değerlendirilir. Dört haftada bir sonuçları birlikte gözden geçiririz."
     },
     {
-      "q": "Cevrimici BDT etkili mi?",
-      "a": "Arastirmalar, cevrimici BDT'nin bircok durum icin yuzyuze terapiyle benzer etkinlikte oldugunu gostermektedir."
+      "q": "Nöropsikolojik değerlendirme kimler için?",
+      "a": "Dikkat, bellek ya da planlama alanında somut zorluk yaşayan; tanı netleştirmek ya da güçlü/zayıf alan haritası çıkarmak isteyen yetişkinler için uygundur."
     },
     {
-      "q": "Seans ucreti ne kadar?",
-      "a": "Seans bilgisi icin iletisime gecin."
+      "q": "Terapi ne kadar sürer?",
+      "a": "BDT protokolleri çoğunlukla 12-20 seans aralığında planlanır; süre, hedeflerin kapsamına ve ilerleme verisine göre birlikte güncellenir."
+    },
+    {
+      "q": "Çevrim içi seans mümkün mü?",
+      "a": "Terapi seansları çevrim içi yürütülebilir. Nöropsikolojik testlerin bir bölümü ise standardizasyon gereği yüz yüze uygulanır."
     }
   ],
   "contact": {
-    "title": "Iletisim",
-    "intro": "Kanita dayali destek almak icin iletisime gecebilirsiniz.",
-    "formName": "Adiniz",
+    "title": "İletişim",
+    "intro": "45 dakikalık ilk değerlendirme görüşmesinde hedeflerinizi netleştirir, size uygun protokolü birlikte seçeriz.",
+    "formName": "Ad Soyad",
     "formEmail": "E-posta",
-    "formMessage": "Mesajiniz",
-    "formSubmit": "Gonder"
+    "formMessage": "Sizi buraya getiren şeyi birkaç cümleyle anlatın...",
+    "formSubmit": "Kaydı gönder"
   }
 }

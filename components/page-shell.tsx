@@ -251,7 +251,7 @@ export function SynapseShell({
 
       <footer className="border-t border-[#16181f]/8 py-10 text-center">
         <p className="text-xs text-[#6a7080]">
-          {siteName || "SYNAPSE"} - beyin degisebilir, biz bu degisimin bilimiyle calisiriz
+          {siteName || "SYNAPSE"} · beyin değişebilir, biz bu değişimin bilimiyle çalışırız
         </p>
       </footer>
     </div>

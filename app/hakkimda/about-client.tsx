@@ -8,10 +8,10 @@ const VIOLET = "#7b6cf0";
 const PINK = "#ee7ab5";
 
 const bioNodes = [
-  { t: "Egitim", d: "Psikoloji lisansi ve klinik psikoloji yuksek lisansi; noropsikoloji alaninda uzmanlik.", pos: { left: "8%", top: 30 } },
-  { t: "Klinik Deneyim", d: "11 yilda 3.800'un uzerinde seans; kaygi, duygudurum ve dikkat alanlarinda yogun pratik.", pos: { right: "8%", top: 30 } },
-  { t: "Arastirma", d: "14 bilimsel yayin ve bildiri; iki cok merkezli calismada arastirmaci.", pos: { left: "8%", bottom: 10 } },
-  { t: "Supervizyon", d: "Genc klinisyenlere duzenli supervizyon; etik kurul deneyimi.", pos: { right: "8%", bottom: 10 } },
+  { t: "Eğitim", d: "Psikoloji lisansı ve klinik psikoloji yüksek lisansı; nöropsikoloji alanında uzmanlaşma.", pos: { left: "8%", top: 30 } },
+  { t: "Klinik Deneyim", d: "11 yılda 3.800'ün üzerinde seans; kaygı, duygudurum ve dikkat alanlarında yoğun pratik.", pos: { right: "8%", top: 30 } },
+  { t: "Araştırma", d: "14 bilimsel yayın ve bildiri; iki çok merkezli çalışmada araştırmacı.", pos: { left: "8%", bottom: 10 } },
+  { t: "Süpervizyon", d: "Genç klinisyenlere düzenli süpervizyon; etik kurul deneyimi.", pos: { right: "8%", bottom: 10 } },
 ];
 
 export function AboutClient({ content: c }: { content: SiteContent }) {
@@ -19,7 +19,7 @@ export function AboutClient({ content: c }: { content: SiteContent }) {
   const [active, setActive] = useState(-1);
 
   return (
-    <SynapseShell scopeRef={scopeRef} kicker="hakkinda" title="Baglantilarin" accent="hikayesi." siteName={c.site.name}>
+    <SynapseShell scopeRef={scopeRef} kicker="hakkında" title="Bağlantıların" accent="hikayesi." siteName={c.site.name}>
       <section className="relative z-[1] pb-16 pt-2">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p data-reveal className="mx-auto max-w-xl text-center text-[15px] font-light leading-[2] text-[#5a6070]">
@@ -114,9 +114,11 @@ export function AboutClient({ content: c }: { content: SiteContent }) {
             <p className="mt-5 text-center text-[15px] font-light leading-[2] text-[#4a5060]">
               &ldquo;{c.home.quote}&rdquo;
             </p>
-            <p className="mt-3 text-center text-[11px] font-light text-[#6a7080]">
-              - {c.home.quoteAuthor}
-            </p>
+            {c.home.quoteAuthor && (
+              <p className="mt-3 text-center text-[11px] font-light text-[#6a7080]">
+                - {c.home.quoteAuthor}
+              </p>
+            )}
           </div>
         </div>
       </section>
