@@ -11,7 +11,6 @@ const navLinks = [
   { label: "Hakkında", path: "/hakkimda" },
   { label: "Hizmetler", path: "/hizmetler" },
   { label: "Yaklaşım", path: "/yaklasim" },
-  { label: "Yazılar", path: "/yazilar" },
   { label: "SSS", path: "/sss" },
 ] as const;
 
