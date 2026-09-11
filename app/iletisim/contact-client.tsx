@@ -15,6 +15,7 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
   const [topic, setTopic] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
 
   return (
@@ -60,7 +61,12 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                   onSubmit={(e) => {
                     e.preventDefault();
                     if (step < 2) setStep(step + 1);
-                    else setSent(true);
+                    else {
+                      const subject = encodeURIComponent(topic || "İletişim Formu");
+                      const body = encodeURIComponent(`Ad: ${name}\nE-posta: ${email}\n\n${message}`);
+                      window.location.href = `mailto:${c.site.email}?subject=${subject}&body=${body}`;
+                      setSent(true);
+                    }
                   }}
                 >
                   {step === 0 && (
@@ -116,6 +122,8 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                       <textarea
                         rows={5}
                         required
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         placeholder={c.contact.formMessage}
                         className="mt-3 w-full resize-none rounded-xl border border-[#16181f]/10 bg-[#f8f9fb] px-4 py-3 text-sm outline-none transition-[border-color,background-color,box-shadow] duration-300 placeholder:text-[#9aa0ae] focus:border-[#7b6cf0]/60 focus:bg-white focus:ring-2 focus:ring-[#7b6cf0]/15"
                       />
