@@ -18,6 +18,7 @@ export interface SiteContent {
     name: string;
     title: string;
     email: string;
+    phone?: string;
     address: string;
     copyright: string;
   };
