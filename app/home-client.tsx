@@ -427,20 +427,14 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
       <section id="deneyim" className="relative z-[1] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 md:grid-cols-4">
-            {[
-              { n: 11, s: "+", l: "yıl klinik deneyim" },
-              { n: 3800, s: "+", l: "tamamlanmış seans" },
-              { n: 4, s: " haftada bir", l: "düzenli sonuç ölçümü" },
-              { n: 14, s: "", l: "bilimsel yayın & bildiri" },
-            ].map((x) => (
-              <div key={x.l} data-reveal className="rounded-2xl border border-white bg-white/75 p-6 shadow-[0_12px_34px_rgba(22,24,31,0.06)] backdrop-blur">
+            {(c.metrics ?? []).map((m, i) => (
+              <div key={i} data-reveal className="rounded-2xl border border-white bg-white/75 p-6 shadow-[0_12px_34px_rgba(22,24,31,0.06)] backdrop-blur">
                 <p className="text-4xl font-bold tracking-tight" style={{ fontFamily: "var(--font-synapse), var(--font-sans), sans-serif" }}>
-                  <span data-count={x.n}>0</span>
-                  <span className="bg-clip-text text-lg text-transparent" style={{ backgroundImage: `linear-gradient(92deg,${PINK},${VIOLET})` }}>
-                    {x.s}
+                  <span className="bg-clip-text text-transparent" style={{ backgroundImage: `linear-gradient(92deg,${PINK},${VIOLET})` }}>
+                    {m.val}
                   </span>
                 </p>
-                <p className="mt-2 text-xs leading-relaxed text-[#6a7080]">{x.l}</p>
+                <p className="mt-2 text-xs leading-relaxed text-[#6a7080]">{m.label}</p>
               </div>
             ))}
           </div>
