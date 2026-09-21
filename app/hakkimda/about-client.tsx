@@ -7,16 +7,28 @@ import type { SiteContent } from "@/lib/content";
 const VIOLET = "#7b6cf0";
 const PINK = "#ee7ab5";
 
-const bioNodes = [
-  { t: "Eğitim", d: "Psikoloji lisansı ve klinik psikoloji yüksek lisansı; nöropsikoloji alanında uzmanlaşma.", pos: { left: "8%", top: 30 } },
-  { t: "Klinik Deneyim", d: "11 yılda 3.800'ün üzerinde seans; kaygı, duygudurum ve dikkat alanlarında yoğun pratik.", pos: { right: "8%", top: 30 } },
-  { t: "Araştırma", d: "14 bilimsel yayın ve bildiri; iki çok merkezli çalışmada araştırmacı.", pos: { left: "8%", bottom: 10 } },
-  { t: "Süpervizyon", d: "Genç klinisyenlere düzenli süpervizyon; etik kurul deneyimi.", pos: { right: "8%", bottom: 10 } },
+const defaultBioNodes = [
+  { t: "Eğitim", d: "Psikoloji lisansı ve klinik psikoloji yüksek lisansı; nöropsikoloji alanında uzmanlaşma." },
+  { t: "Klinik Deneyim", d: "11 yılda 3.800'ün üzerinde seans; kaygı, duygudurum ve dikkat alanlarında yoğun pratik." },
+  { t: "Araştırma", d: "14 bilimsel yayın ve bildiri; iki çok merkezli çalışmada araştırmacı." },
+  { t: "Süpervizyon", d: "Genç klinisyenlere düzenli süpervizyon; etik kurul deneyimi." },
+];
+
+const NODE_POSITIONS = [
+  { left: "8%", top: 30 },
+  { right: "8%", top: 30 },
+  { left: "8%", bottom: 10 },
+  { right: "8%", bottom: 10 },
 ];
 
 export function AboutClient({ content: c }: { content: SiteContent }) {
   const scopeRef = useSynapseReveal();
   const [active, setActive] = useState(-1);
+
+  const bioNodes = (c.about.credentials.length > 0
+    ? c.about.credentials.map((cred, i) => ({ t: cred.title, d: cred.detail, pos: NODE_POSITIONS[i % NODE_POSITIONS.length] }))
+    : defaultBioNodes.map((n, i) => ({ ...n, pos: NODE_POSITIONS[i] }))
+  );
 
   return (
     <SynapseShell scopeRef={scopeRef} kicker="hakkında" title="Bağlantıların" accent="hikayesi." siteName={c.site.name}>
