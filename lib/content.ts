@@ -32,6 +32,10 @@ const siteContentInputSchema = z.object({
     .partial()
     .optional(),
 
+  metrics: z
+    .array(z.object({ val: metin, label: metin }))
+    .optional(),
+
   services: z
     .array(
       z.object({ title: metin, desc: metin, duration: metin, method: metin }),
@@ -104,6 +108,7 @@ export interface SiteContent {
     quote: string;
     quoteAuthor: string;
   };
+  metrics: { val: string; label: string }[];
   services: {
     title: string;
     desc: string;
@@ -157,6 +162,12 @@ const DEFAULTS: SiteContent = {
     quote: "Beyniniz bozuk degil, bazi baglantilari sizi yormaya ogrenmis.",
     quoteAuthor: "",
   },
+  metrics: [
+    { val: "11+", label: "yil klinik deneyim" },
+    { val: "3800+", label: "tamamlanmis seans" },
+    { val: "4", label: "haftada bir olcum" },
+    { val: "14", label: "bilimsel yayin" },
+  ],
   services: [
     { title: "Bilissel Davranisci Terapi", desc: "Kaygi ve depresyonda yapilandirilmis calisma.", duration: "50 dk", method: "Yuzyuze / Cevrimici" },
   ],
@@ -223,6 +234,10 @@ export function getContent(): SiteContent {
         base = {
           site: birlestir(DEFAULTS.site, g.site),
           home: birlestir(DEFAULTS.home, g.home),
+          metrics:
+            g.metrics && g.metrics.length > 0
+              ? (g.metrics as SiteContent["metrics"])
+              : DEFAULTS.metrics,
           services:
             g.services && g.services.length > 0
               ? (g.services as SiteContent["services"])
@@ -243,6 +258,7 @@ export function getContent(): SiteContent {
         base = {
           site: birlestir(DEFAULTS.site, raw.site),
           home: birlestir(DEFAULTS.home, raw.home),
+          metrics: Array.isArray(raw.metrics) && raw.metrics.length > 0 ? raw.metrics : DEFAULTS.metrics,
           services: Array.isArray(raw.services) && raw.services.length > 0 ? raw.services : DEFAULTS.services,
           about: birlestir(DEFAULTS.about, raw.about),
           approach: birlestir(DEFAULTS.approach, raw.approach),
@@ -267,6 +283,10 @@ export function getContent(): SiteContent {
         base = {
           site: birlestir(base.site, g.site),
           home: birlestir(base.home, g.home),
+          metrics:
+            g.metrics && g.metrics.length > 0
+              ? (g.metrics as SiteContent["metrics"])
+              : base.metrics,
           services:
             g.services && g.services.length > 0
               ? (g.services as SiteContent["services"])
